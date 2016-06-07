@@ -1,22 +1,31 @@
+body {
+  font-family: 'Montserrat', sans-serif;
+}
 .header-link{
   display: inline-block;
   margin-left: 15px;
+  color: black;
 }
 .header-links{
-  margin-left: 20%;
+  margin-left: 10%;
+  padding-top: 30px;
+  padding-bottom: 5px;
 }
 .header{
-  margin-left: 20px;
   display: inline-block;
 }
+a{
+  color: black;
+}
 .title{
-  margin-right: 15%;
+  margin-right: 10%;
   left: 0px;
+  font-size: 18pt;
 }
 .story-box{
   padding-left: 5px;
   padding-right: 5px;
-  max-width: 350px;
+  max-width: 40%;
   /*max-height: 250px;*/
 }
 .image-tile{
@@ -29,6 +38,23 @@
   color: grey;
 }
 .myFooter{
-  bottom: 5px;
   text-align: center;
+}
+.jumbotron{
+  height: 500px;
+}
+.caro-display{
+  height: 500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.container{
+  align-items: center;
+}
+.caro-img{
+  height:400px;
+  width:800px;
+}
+img {
+  border-radius: 10px;
 }

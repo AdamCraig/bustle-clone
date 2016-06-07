@@ -1,5 +1,32 @@
 <div>
+
+  <div class='jumbotron'>
+
+    {{#carousel-container transition-interval=400 class='caro-display'}}
+    {{#carousel-body}}
+    {{#carousel-item}}
+    <img class='caro-img' src='http://static2.techinsider.io/image/56ba1dbd6e97c62c008b6091-1063-532/game%20of%20thrones%20fan%20art%20ertacaltinoz%20deviantart.jpg'>
+    {{/carousel-item}}
+    {{#carousel-item}}
+    <img class='caro-img' src='http://www.wired.com/wp-content/uploads/2016/03/silicon_valley_opener2.jpg'>
+    {{/carousel-item}}
+    {{#carousel-item}}
+    <img class='caro-img' src='http://images-cdn.moviepilot.com/images/c_fill,h_419,w_740/t_mp_quality/j858iv38sfgobx2oinmj/what-to-expect-from-orphan-black-season-4-romance-delphine-s-return-more-new-charact-572639.jpg'>
+    {{/carousel-item}}
+    {{/carousel-body}}
+
+    {{#carousel-arrow direction="left" tagName="button"}}
+    Previous
+    {{/carousel-arrow}}
+    {{#carousel-arrow direction="right" tagName="button"}}
+    Next
+    {{/carousel-arrow}}
+    {{/carousel-container}}
+
+  </div>
+
   {{#each model as |article|}}
-    {{article-tile article=article}}
+  {{article-tile article=article}}
   {{/each}}
+
 </div>
