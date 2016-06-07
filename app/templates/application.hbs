@@ -1,3 +1,30 @@
-<h2 id="title">Welcome to Ember</h2>
 
-{{outlet}}
+<div class='header-links'>
+  <p class='header-link title'>
+    {{#link-to 'index'}}BUSTLE{{/link-to}}
+  </p>
+  <p class='header-link'>
+    NEWS
+  </p>
+  <p class='header-link'>
+    ENTERTAINMENT
+  </p>
+  <p class='header-link'>
+    FASHION & BEAUTY
+  </p>
+  <p class='header-link'>
+    LIFESTYLE
+  </p>
+  <p class='header-link'>
+    BOOKS
+  </p>
+  <p class='header-link'>
+    EXPLORE
+  </p>
+  <p class='header-link' >
+    {{#link-to 'about'}} ABOUT {{/link-to}}
+  </p>
+</div>
+<div class='container'>
+  {{outlet}}
+</div>

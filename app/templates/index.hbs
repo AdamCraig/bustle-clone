@@ -1,0 +1,9 @@
+<div>
+  {{#each model as |article|}}
+    {{article-tile article=article}}
+  {{/each}}
+</div>
+
+<div class="footer">
+{{#link-to 'new-article'}}Add An Article{{/link-to}}
+</div>
