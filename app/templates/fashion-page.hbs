@@ -1,5 +1,7 @@
 <div>
   {{#each model as |article|}}
+    {{#if (eq article.category "Fashion")}}
     {{article-tile article=article}}
+    {{/if}}
   {{/each}}
 </div>

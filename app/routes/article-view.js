@@ -8,6 +8,14 @@ export default Ember.Route.extend({
   deleteArticle(article){
     article.destroyRecord();
     this.transitionTo('index');
+  },
+  updateArticle(article, params){
+    Object.keys(params).forEach(function(key){
+      if(params[key]!== undefined){
+        article.set(key, params[key]);
+      }
+    });
+    article.save();
   }
 }
 });

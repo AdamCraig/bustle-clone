@@ -7,4 +7,8 @@ by {{article.author}}
 {{article.category}}
 <br>
 {{article.copy}}
+<button {{action 'editShow'}}>Edit</button>
+{{#if isEditShow}}
+  {{edit-details updateArticle='updateArticle' article=article}}
+{{/if}}
 <button {{action 'deleteArticle' article}}>Delete</button>

@@ -1,0 +1,31 @@
+<h1>Edit this Article:</h1>
+<div>
+  <form>
+    <div class="form-group">
+      <label for="category">Category</label>
+      {{input value=category id="category"}}
+    </div>
+
+    <div class="form-group">
+      <label for="title">Title</label>
+      {{input value=title id="title"}}
+    </div>
+
+    <div class="form-group">
+      <label for="image">Image</label>
+      {{input value=image id="image"}}
+    </div>
+
+    <div class="form-group">
+      <label for="copy">Copy</label>
+      {{input value=copy id="copy"}}
+    </div>
+
+    <div class="form-group">
+      <label for="author">Author</label>
+      {{input value=author id="author"}}
+    </div>
+
+    <button {{action 'updateArticle' article}}>Update</button>
+  </form>
+</div>

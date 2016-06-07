@@ -4,22 +4,16 @@
     {{#link-to 'index'}}BUSTLE{{/link-to}}
   </p>
   <p class='header-link'>
-    NEWS
+    {{#link-to 'news-page'}}NEWS{{/link-to}}
   </p>
   <p class='header-link'>
-    ENTERTAINMENT
+    {{#link-to 'entertainment-page'}}ENTERTAINMENT{{/link-to}}
   </p>
   <p class='header-link'>
-    FASHION & BEAUTY
+    {{#link-to 'fashion-page'}}FASHION{{/link-to}}
   </p>
   <p class='header-link'>
-    LIFESTYLE
-  </p>
-  <p class='header-link'>
-    BOOKS
-  </p>
-  <p class='header-link'>
-    EXPLORE
+    {{#link-to 'lifestyle-page'}}LIFESTYLE{{/link-to}}
   </p>
   <p class='header-link' >
     {{#link-to 'about'}} ABOUT {{/link-to}}
@@ -28,3 +22,6 @@
 <div class='container'>
   {{outlet}}
 </div>
+<footer class="myFooter">
+  {{#link-to 'new-article'}}ADD AN ARTICLE{{/link-to}}
+</footer>
